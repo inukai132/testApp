@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Your Business - Dashboard</title>
+    <title>Your Business - Inbox</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,13 +91,49 @@
             <li class="breadcrumb-item">
               <a href="dashboard.html">Dashboard</a>
             </li>
+            <li class="breadcrumb-item">
+              Inbox
+            </li>
           </ol>
 
           <!-- Page Content -->
-          <h1>Dashboard</h1>
+          <h1>Inbox</h1>
           <hr>
 
           <div class="row">
+            <div class="container">
+              <div class="row col-md-offset-2 custyle">
+                <table class="table table-striped custab">
+                  <thead>
+                    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> Compose</a>
+                    <tr>
+                      <th>Sender</th>
+                      <th>Subject</th>
+                      <th>Date</th>
+                      <th class="text-center">Action</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Jeremy</td>
+                    <td>Stock Prices</td>
+                    <td>3/3/18</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Reply</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                  </tr>
+                  <tr>
+                    <td>Kyle</td>
+                    <td>New Product</td>
+                    <td>3/1/18</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Reply</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                  </tr>
+                  <tr>
+                    <td>Chris</td>
+                    <td>Profit Report</td>
+                    <td>3/1/18</td>
+                    <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Reply</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.container-fluid -->

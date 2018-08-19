@@ -13,6 +13,23 @@ body {
   height: 100%;
 }
 
+.custab {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5% 0;
+  -webkit-box-shadow: 3px 3px 2px #ccc;
+  box-shadow: 3px 3px 2px #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.custab:hover {
+  -webkit-box-shadow: 3px 3px 0px transparent;
+  box-shadow: 3px 3px 0px transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
