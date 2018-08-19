@@ -48,6 +48,6 @@
     "gulp-sass": "4.0.1",
     "gulp-uglify": "3.0.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-serve": "*"
+    "gulp-webserver": "*"
   }
 }

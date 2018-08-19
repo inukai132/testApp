@@ -7,7 +7,7 @@ var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-var serve = require('gulp-serve');
+var serve = require('gulp-webserver');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -139,7 +139,14 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
 });
 
 
-//serve task
-gulp.task('serve', serve({
-  port:80
-}))
+//serve task 
+gulp.task('serve',function() {
+  gulp.src('.')
+    .pipe(serve({
+      livereload: false,
+      directoryListing: false,
+      open: false,
+      port: 80,
+      host: '0.0.0.0'
+    }));
+});
